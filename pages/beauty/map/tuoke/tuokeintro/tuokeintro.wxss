@@ -1,0 +1,35 @@
+.container {
+  width: 100%;
+}
+.topimg {
+  width: 100%;
+  height: 400rpx;
+}
+.text {
+  text-align: center;
+  width: 96%;
+  margin: 30rpx auto;
+}
+.title {
+  width: 100%;
+  font-weight: bolder;
+  font-size: 30rpx;
+  margin-top: 30rpx;
+}
+.content {
+  width: 100%;
+  color: gray;
+  font-size: 27rpx;
+  margin: 20rpx 0;
+}
+.btn {
+  display: inline-block;
+  padding: 10rpx 20rpx;
+  color: #1296db;
+  border: 1rpx solid #1296db;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+}
+.text1 {
+  margin-top: 60rpx;
+}

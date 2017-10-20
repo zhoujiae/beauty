@@ -1,0 +1,14 @@
+<import src="../../../../../../wxParse/wxParse.wxml" />
+<view class="container">
+  <view class="articallist">
+    <view class="title">{{articaldetail.title}}</view>
+    <view class="img">
+      <image src="{{articaldetail.img}}"></image>
+    </view>
+    <view class="detail">
+      <template is="wxParse" data="{{wxParseData:arta.nodes}}">
+        <view class="text">{{articaldetail.details}}</view>
+      </template>
+    </view>
+  </view>
+</view>

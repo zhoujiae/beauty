@@ -1,0 +1,2 @@
+@import "../../../../../style/articallist.wxss";
+@import "../../../../../wxParse/wxParse.wxss";

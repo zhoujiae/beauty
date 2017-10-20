@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="list">
+    <view class="listchildren1">
+      <view class="inlineblock touxiang">客户名称</view>
+      <view class="inlineblock kehu">项目</view>
+      <view class="inlineblock time">成交时间</view>
+      <view class="inlineblock make">是否奖励</view>
+    </view>
+    <view class="listchildren" wx:for="{{record}}">
+      <view class="inlineblock touxiang">{{item.fansname}}</view>
+      <view class="inlineblock kehu">酒店</view>
+      <view class="inlineblock time">{{item.addtime}}</view>
+      <view class="inlineblock make">是</view>
+    </view>
+  </view>
+</view>

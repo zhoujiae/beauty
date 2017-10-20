@@ -1,0 +1,73 @@
+{
+  "pages": [
+    "pages/beauty/home/home",
+    "pages/beauty/logs/logs",
+    "pages/beauty/ambient/ambient",
+    "pages/beauty/pre/pre",
+    "pages/beauty/map/map",
+    "pages/beauty/home/video/video",
+    "pages/beauty/consult/consult",
+    "pages/beauty/home/detail/articallist/articallist",
+    "pages/beauty/home/detail/articallist/artical/artical",
+    "pages/beauty/home/detail/photo/photo",
+    "pages/beauty/ambient/detail/photo/photo",
+    "pages/beauty/pre/prelistdetail/prelistdetail",
+    "pages/beauty/pre/predetail/predetail",
+    "pages/beauty/consult/detail/articallist/articallist",
+    "pages/beauty/consult/detail/articallist/artical/artical",
+    "pages/beauty/map/tuoke/tuoke",
+    "pages/beauty/map/tuoke/award/award",
+    "pages/beauty/map/tuoke/customer/customer",
+    "pages/beauty/map/tuoke/customer/customerdetail/customerdetail",
+    "pages/beauty/map/tuoke/record/record",
+    "pages/beauty/map/tuoke/tuokeintro/tuokeintro"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff5778",
+    "navigationBarTitleText": "美容",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/beauty/home/home",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home1.png"
+      },
+      {
+        "pagePath": "pages/beauty/ambient/ambient",
+        "text": "环境",
+        "iconPath": "images/ambient.png",
+        "selectedIconPath": "images/ambient1.png"
+      },
+      {
+        "pagePath": "pages/beauty/pre/pre",
+        "text": "预约",
+        "iconPath": "images/pre.png",
+        "selectedIconPath": "images/pre1.png"
+      },
+      {
+        "pagePath": "pages/beauty/consult/consult",
+        "text": "资讯",
+        "iconPath": "images/consult.png",
+        "selectedIconPath": "images/consult1.png"
+      },
+      {
+        "pagePath": "pages/beauty/map/map",
+        "text": "位置",
+        "iconPath": "images/map.png",
+        "selectedIconPath": "images/map1.png"
+      }
+    ],
+    "color": "#bfbfbf",
+    "selectedColor": "#ff5778",
+    "backgroundColor": "white"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

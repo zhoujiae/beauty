@@ -1,0 +1,10 @@
+<template name="articaltype">
+  <view class="container">
+  <view class="show" wx:for="{{gettype}}" bindtap="goDetial_articallist" data-id="{{item.id}}">
+    <view class="jsqc_title color">{{item.name}}</view>
+    <view class="img">
+      <image src="{{item.image}}"></image>
+    </view>      
+  </view>
+  </view>
+</template>

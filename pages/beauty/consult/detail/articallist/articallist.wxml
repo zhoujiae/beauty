@@ -1,0 +1,2 @@
+<import src="../../../../../tem/articallist.wxml"/>
+<template is="articallist" data="{{articallist}}"></template>

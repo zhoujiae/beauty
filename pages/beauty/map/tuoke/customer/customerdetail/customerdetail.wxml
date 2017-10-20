@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="title">订单详情</view>
+  <view class="black">姓名: <span class="gray">{{customerdetail.customer}}</span></view>
+  <view class="black">联系方式: <span class="gray">{{customerdetail.tel}}</span></view>
+  <view class="black">提交时间: <span class="gray">{{customerdetail.addtime}}</span></view>
+  <view class="black">模块: <span class="gray">{{customerdetail.modulename}}</span></view>
+  <view class="black">状态: <span class="gray">{{customerdetail.status}}</span></view>
+  <view class="black">价格: <span class="gray">¥{{customerdetail.price}}</span></view>
+  <view class="black">奖励状态: <span class="gray">{{customerdetail.is_receive}}</span></view>
+  <view class="black">奖励领取时间: <span class="gray">{{customerdetail.is_receive == "未领取" ? "暂无" : customerdetail.receive_time}}</span></view>
+  <view class="black">备注: <span class="gray">{{customerdetail.introduce}}</span></view>
+</view>

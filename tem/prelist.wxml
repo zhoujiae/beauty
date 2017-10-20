@@ -1,0 +1,13 @@
+<template name="prelist">
+  <view class="container">
+  <view class="prelist" wx:for="{{getprelist}}" bindtap="go_pre" data-id="{{item.id}}">
+    <view class="title">{{item.title}}</view>
+    <view class="img">
+      <image src="{{item.img}}"></image>
+    </view>
+    <view class="btn">
+      <button data-id="{{item.id}}" class="color">立即预约</button>
+    </view>
+  </view>
+</view>
+</template>

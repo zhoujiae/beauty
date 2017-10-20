@@ -1,0 +1,13 @@
+<template name="photo">
+  <view class="container">
+  <view class="photolist" wx:for="{{photo}}" data-id="{{item.id}}">
+  <view class="title color">{{item.name}}</view>
+    <view class="top">
+      <image src="{{item.picurl}}"></image>
+    </view>
+    <view class="down">      
+      <view class="text">{{item.info}}</view>
+    </view>
+  </view> 
+</view>
+</template>

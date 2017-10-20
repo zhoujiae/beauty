@@ -1,0 +1,40 @@
+<view class="container">
+  <!--客户分类-->
+  <view class="navbar">  
+    <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>  
+  </view>
+  <!--客户分类1-->
+  <view hidden="{{currentTab!==0}}" class="container list">
+    <view class="list">
+      <view class="listchildren1">
+        <view class="inlineblock touxiang">姓名</view>
+        <view class="inlineblock kehu">奖励</view>
+        <view class="inlineblock time">提交时间</view>
+        <view class="inlineblock make">状态</view>
+      </view>
+      <view class="listchildren" wx:for="{{customer}}" bindtap="go_detail" data-id="{{item.id}}">
+        <view class="inlineblock touxiang">{{item.customer}}</view>
+        <view class="inlineblock kehu">{{item.is_receive}}</view>
+        <view class="inlineblock time">{{item.addtime}}</view>
+        <view class="inlineblock make">{{item.status}}</view>
+      </view>
+    </view>
+  </view>
+  <!--客户分类2-->
+  <view hidden="{{currentTab!==1}}" class="container list">
+    <view class="list">
+      <view class="listchildren1">
+        <view class="inlineblock touxiang">姓名</view>
+        <view class="inlineblock kehu">奖励</view>
+        <view class="inlineblock time">提交时间</view>
+        <view class="inlineblock make">状态</view>
+      </view>
+      <view class="listchildren" wx:for="{{customer}}" data-id="{{item.id}}" bindtap="go_detail">
+        <view class="inlineblock touxiang">{{item.customer}}</view>
+        <view class="inlineblock kehu">{{item.is_receive}}</view>
+        <view class="inlineblock time">{{item.addtime}}</view>
+        <view class="inlineblock make">{{item.status}}</view>
+      </view>
+    </view>
+  </view>
+</view>

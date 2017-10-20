@@ -1,0 +1,24 @@
+.listchildren {
+  padding:30rpx 0;
+  overflow: hidden;
+  border-bottom: 3rpx solid gainsboro;
+  color: gray;
+}
+.listchildren1 {
+  padding:20rpx 0;
+  overflow: hidden;
+  border-bottom: 3rpx solid gainsboro;
+  font-weight: bolder;
+}
+.inlineblock {
+  display:inline-block;
+  vertical-align:middle;
+  font-size:30rpx;
+  width: 25%;
+  text-align: center;
+}
+.kehuimg {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+}

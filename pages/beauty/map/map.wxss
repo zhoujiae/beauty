@@ -1,0 +1,11 @@
+
+.map_text {
+ width: 95%;
+ line-height: 40rpx;
+ color: #696969;
+ font-size:30rpx;
+ margin: 20rpx auto 0;
+}
+.map_text>view {
+  margin: 10rpx 0;
+}

@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="img">
+    <image src="../../../../../images/1111.jpg" class="topimg"></image>
+  </view>
+  <view class="text">
+    <view class="title">什么是拓客</view>
+    <view class="content">帮我们推荐客户,成交后你会获得奖励</view>
+    <view class="btn">奖励说明</view>
+  </view>
+  <view class="text text1">
+    <view class="title">如何拓客</view>
+    <view class="content">通过个人二维码邀请好友打开小程序后锁定上下级关系,好友成为你的客户</view>
+    <view class="btn">拓客中心</view>
+  </view>
+  
+</view>

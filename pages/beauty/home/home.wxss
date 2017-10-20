@@ -1,0 +1,58 @@
+@import "../../../style/swiper.wxss";
+@import "../../../style/navlist.wxss";
+@import "../../../style/fontstyle.wxss";
+@import "../../../style/color.wxss";
+.rqxm {
+  width: 95%;
+  margin: 40rpx auto;
+  font-size: 0;
+}
+.title {
+  overflow: hidden;
+}
+.rqxm_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.rqxm_list {
+  width: 49%;
+}
+.img {
+  width: 100%;
+  margin-top: 20rpx;
+}
+image {
+  height: 230rpx;
+  width: 100%;
+}
+.introduce {
+  width: 100%;
+  text-align: center;
+  font-size: 30rpx;
+  padding: 15rpx 0;
+}
+.video {
+  width: 100%;
+}
+.myVideo {
+  width: 100%;
+  margin-top: 20rpx;
+}
+.headerRight {
+  padding: 20rpx 0;
+}
+.headerName {
+  font-size: 28rpx;
+  line-height: 40rpx;
+}
+.headerTime {
+  display: block;
+  font-size: 24rpx;
+  color: gray;
+}
+.border {
+  margin-top: 10rpx;
+  border-bottom:1px solid gray;
+}

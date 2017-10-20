@@ -1,0 +1,70 @@
+<!--index.wxml-->
+ <view class="container">
+  <view class="userinfo">
+      <view class="info_img"><image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image></view>
+      <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+      <view class="ino">
+        <view class="member member1">高级会员</view>
+        <view class="member" bindtap="go_tuokeintro">拓客说明</view>
+      </view>
+  </view>
+  <!-- 分类列表 -->
+  <view class="list">
+    <view class="listchildren" bindtap='go_customer'>
+      <view class="inlineblock"><image src="../../../../images/kehu.png" class="kehuimg"></image></view>
+      <view class="inlineblock kehu">我的客户</view>
+      <view class="inlineblock make">></view>
+    </view>
+    <view class="listchildren" bindtap="customer_submit">
+      <view class="inlineblock"><image src="../../../../images/tijiao.png" class="kehuimg"></image></view>
+      <view class="inlineblock kehu">客户提交</view>
+      <view class="inlineblock make">></view>
+    </view>
+    <view class="listchildren" bindtap="go_record">
+      <view class="inlineblock"><image src="../../../../images/jilu.png" class="kehuimg"></image></view>
+      <view class="inlineblock kehu">成交记录</view>
+      <view class="inlineblock make">></view>
+    </view>
+    <view class="listchildren" bindtap="go_award">
+      <view class="inlineblock"><image src="../../../../images/jiangli.png" class="kehuimg"></image></view>
+      <view class="inlineblock kehu">我的奖励</view>
+      <view class="inlineblock make">></view>
+    </view>
+    <view class="listchildren">
+      <view class="inlineblock"><image src="../../../../images/erweima.png" class="kehuimg"></image></view>
+      <view class="inlineblock kehu">我的二维码</view>
+      <view class="inlineblock make">></view>
+    </view>
+  </view>
+  <!--遮罩层-->
+  <view class="{{filterbol ? 'filter_hide' : 'filter_show'}}" bindtap="filter_click"></view>
+  <!--客户提交弹框-->
+  <view class="{{customerSubmit  ? 'customerSubmit_hide' : 'customerSubmit_show'}}">
+    <form bindsubmit="send_customer">
+      <view class="submitinput">
+        <input name="name" placeholder="姓  名:" bindblur="InputEvent" style="color:gray;padding:6rpx 0;"/>
+      </view>
+      <view class="submitinput">
+        <input name="phone" placeholder="手机号" bindblur="InputEvent" style="color:gray;padding:6rpx 0;"/>
+      </view>
+      <view class="submitinput">
+        <textarea name="introduce" bindblur="bindTextAreaBlur" auto-height placeholder="说  明:不能多于50字" style="width: 100%;padding-bottom:3px;padding-top: 4px;"/>
+      </view>
+      <!--<view class="submitinput">
+        <picker mode="date" value="{{date}}" start="2017-03-01" end="2088-09-01"bindchange="bindDateChange">
+          <view class="picker" style="padding: 3px 0;color:gray">
+            成交时间: {{date}}
+          </view>
+        </picker>
+      </view>-->
+      <!--<view class="submitinput">
+        <radio-group class="radio-group" bindchange="radioChange">
+          <label class="radio" wx:for="{{ifaward}}" style="color:gray;">
+            <radio animation="{{animationData}}" value="{{item.value}}" checked="{{item.checked}}" color="#1296db"/>{{item.name}}
+          </label>
+        </radio-group>
+      </view>-->
+      <button form-type="submit" class="btn">提交</button>
+    </form>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+<import src="../../../tem/swiper.wxml"/>
+<template is="swiper" data="{{list}}"></template>
+<import src="../../../tem/articaltype.wxml"/>
+<template is="articaltype" data="{{gettype}}"></template>

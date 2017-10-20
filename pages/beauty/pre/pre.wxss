@@ -1,0 +1,3 @@
+@import "../../../style/swiper.wxss";
+@import "../../../style/prelist.wxss";
+@import "../../../style/color.wxss";

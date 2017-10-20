@@ -1,0 +1,54 @@
+<import src="../../../tem/swiper.wxml"/>
+<template is="swiper" data="{{list}}"></template>
+<view class="container">
+    <!--分类列表-->
+    <view class="nav_list">
+      <view class="nav_children" wx:for="{{gettype}}" bindtap="go_articallist" data-id="{{item.id}}">
+          <view>
+            <image src="{{item.img}}"></image>
+          </view>
+          <view >
+            <text>{{item.name}}</text>
+          </view>
+      </view>
+    </view>
+    <!--人气项目-->
+    <view class="rqxm">
+       <view class="title">
+         <text class="font_style xueyuan_top_left">环境展示</text>
+         <text class="font_style xueyuan_top_right" bindtap="goambient">更多 ></text>
+       </view>
+       <view class="rqxm_content">
+         <view class="rqxm_list" wx:for="{{photogroup}}" bindtap="goDetial_photo" data-id="{{item.id}}">
+          <view class="img">
+            <image src="{{item.img}}"></image>
+          </view>
+          <view class="introduce color">
+            <text>{{item.name}}</text>
+          </view>
+       </view>
+       </view>
+       
+    </view>
+
+   <!--视频-->
+   <view class="rqxm" wx:if="{{videoList.length != 0  && videoList != null && videoList != false }}">
+     <view class="title">
+      <text class="font_style xueyuan_top_left">视频介绍</text>
+      <text class="font_style xueyuan_top_right" bindtap="goMoreVideo">更多 ></text>
+    </view>
+
+    <view class="video" wx:for="{{videoList}}">
+
+       <view class="headerRight">
+          <text class="headerName">{{item.video_name}}</text>
+          <text class="headerTime">{{item.addtime}}</text>
+      </view>
+      <video class="myVideo"  src="{{item.video_url}}"  controls="controls"  poster="{{item.img}}"></video>
+
+      <view class="border"></view>
+    
+    </view>
+  </view>
+
+</view>

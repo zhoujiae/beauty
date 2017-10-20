@@ -1,0 +1,2 @@
+<import src="../../../../../tem/photo.wxml"/>
+<template is="photo" data="{{photo}}"></template>

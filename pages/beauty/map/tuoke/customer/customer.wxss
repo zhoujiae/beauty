@@ -1,0 +1,52 @@
+.listchildren {
+  padding:30rpx 0;
+  overflow: hidden;
+  border-bottom: 3rpx solid gainsboro;
+  color: gray;
+}
+.listchildren1 {
+  padding:20rpx 0;
+  overflow: hidden;
+  border-bottom: 3rpx solid gainsboro;
+  font-weight: bolder;
+}
+.inlineblock {
+  display:inline-block;
+  vertical-align:middle;
+  font-size:30rpx;
+  width: 25%;
+  text-align: center;
+}
+.kehuimg {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+}
+/*选项卡*/
+.navbar{  
+  flex: none;  
+  display: flex;   
+  width: 96%;
+  margin: 0 auto;
+}
+.navbar .item{  
+  position: relative;  
+  flex: auto;  
+  text-align: center;  
+  line-height: 80rpx;  
+  font-size: 30rpx;
+  font-weight: bolder;
+}
+.navbar .item.active{  
+  color: black;  
+}  
+.navbar .item.active:after{  
+  content: "";  
+  display: block;  
+  position: absolute;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  height: 4rpx;  
+  background: black;  
+}

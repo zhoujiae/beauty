@@ -1,0 +1,15 @@
+.prelist {
+  width: 95%;
+  margin: 20rpx auto;
+}
+.title {
+  text-align: center;
+  padding: 15rpx 0;
+  font-weight: bolder;
+}
+.img {
+  width: 100%;
+}
+image {
+  width: 100%;
+}

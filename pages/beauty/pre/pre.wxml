@@ -1,0 +1,4 @@
+<import src="../../../tem/swiper.wxml"/>
+<template is="swiper" data="{{list}}"></template>
+<import src="../../../tem/prelist.wxml"/>
+<template is="prelist" data="{{getprelist}}"></template>

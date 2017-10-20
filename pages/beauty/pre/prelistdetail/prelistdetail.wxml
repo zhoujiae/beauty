@@ -1,0 +1,15 @@
+  <import src="../../../../wxParse/wxParse.wxml"/>
+  <view class="container">
+  <view class="prelist" bindtap="go_pre" data-id="{{getprelistdetail.id}}">
+    <view class="title">{{getprelistdetail.title}}</view>
+    <view class="img">
+      <image src="{{getprelistdetail.img}}"></image>
+    </view>
+    <template is="wxParse" data="{{wxParseData:arta.nodes}}">
+        <view class="text">{{getprelistdetail.details}}</view>
+      </template>
+    <view class="btn">
+      <button data-id="{{getprelistdetail.id}}" class="color">立即预约</button>
+    </view>
+  </view>
+</view>

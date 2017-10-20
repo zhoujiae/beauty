@@ -1,0 +1,134 @@
+ page {
+   background:gainsboro;
+ }
+ .userinfo {
+  padding:100rpx 0 70rpx;
+} 
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+.info_img {
+  width: 100%;
+  text-align: center;
+}
+.userinfo-nickname {
+ width: 100%;
+ text-align: center;
+}
+.ino {
+  width: 100%;
+  text-align: center;
+  margin-top: 20rpx;
+}
+.member {
+  font-size: 25rpx;
+  padding: 10rpx 20rpx;
+  border: 1rpx solid black;
+  border-radius: 10rpx;
+  display: inline-block;
+  margin: 0 10rpx;
+}
+/* 列表 */
+.list {
+  width:95%;
+  margin:20rpx auto;
+  padding:50rpx 0;
+  border-radius:15rpx;
+  background:white;
+}
+.listchildren {
+  width: 90%;
+  margin: 20rpx auto;
+  padding:10rpx 0;
+  overflow: hidden;
+  border-bottom: 1rpx solid lightgray;
+}
+.inlineblock {
+  display:inline-block;
+  vertical-align:middle;
+  font-size:30rpx;
+}
+.kehuimg {
+  width: 50rpx;
+  height: 50rpx;
+}
+.kehu {
+  margin-left: 30rpx;
+}
+.make {
+  font-weight: bolder;
+  float: right;
+  margin-right: 30rpx;
+}
+/*遮罩层*/
+.filter_hide {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.4;
+  overflow: hidden;
+  z-index: 10;
+  display: none;
+}
+.filter_show {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.4;
+  overflow: hidden;
+  z-index: 10;
+  display: block;
+}
+/*提交弹框*/
+.customerSubmit_hide {
+  position: fixed;
+  width: 70%;
+  top: 30%;
+  left: 15%;
+  background: white;
+  border-radius: 15rpx;
+  font-size: 30rpx;
+  display: none;
+  z-index: 100;
+}
+.customerSubmit_show {
+  position: fixed;
+  width: 70%;
+  top: 30%;
+  left: 15%;
+  background: white;
+  border-radius: 15rpx;
+  font-size: 30rpx;
+  display: block;
+  z-index: 100;
+}
+.submitinput {
+  width: 93%;
+  margin: 20rpx auto;
+  border-bottom: 1rpx solid lightgray;
+}
+.btn {
+  width: 60%;
+  margin: 20rpx auto;
+  border: 1rpx solid #1296db;
+  background: transparent;
+  border-radius: 10rpx;
+  text-align:center;
+  font-size:30rpx;
+  color: #1296db;
+}
+.radio-group {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20rpx;
+  vertical-align: middle;
+}
+picker {padding-bottom: 3px;}

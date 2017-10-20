@@ -1,0 +1,15 @@
+<template name="articallist">
+  <view class="container">
+  <view wx:for="{{articallist}}">
+    <view class="articallist" bindtap="goDetial_artical" data-id="{{item.id}}">
+      <view class="left">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="right">
+        <view class="title">{{item.title}}</view>
+        <view class="text">{{item.text}}</view>
+      </view>
+    </view> 
+  </view>
+</view>
+</template>

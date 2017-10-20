@@ -1,0 +1,22 @@
+.articallist {
+  width: 95%;
+  margin: 0 auto 30rpx;
+  padding: 20rpx 0;
+}
+image {
+  width: 100%;
+  height: 450rpx;
+}
+.title {
+  font-size: 35rpx;
+  font-weight: bolder;
+  text-align: center;
+  padding: 20rpx 0;
+}
+.WxEmojiView {
+  font-size: 30rpx;
+  color: gray;
+  text-indent: 2em;
+  display: block;
+  line-height: 40rpx;
+}

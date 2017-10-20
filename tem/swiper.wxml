@@ -1,0 +1,12 @@
+<template name="swiper">
+  <view class="container">
+  <swiper class="swiper" indicator-dots="true"
+  autoplay="true" interval="2000" duration="1000" circular="true">
+  <block wx:for="{{list}}">
+    <swiper-item>
+      <image src="{{item.img}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+  </view>
+</template>

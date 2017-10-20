@@ -1,0 +1,22 @@
+.jsqc_img>image {
+  width: 100%;
+  height: 370rpx;
+  vertical-align: top;
+}
+.jsqc_title {
+  border-left: 8rpx solid #ffd101;
+  padding: 20rpx 0;
+  font-weight: bolder;
+  text-indent: 1em;
+  margin-bottom: 10rpx;
+}
+.show {
+  width: 95%;
+  margin: 20rpx auto;
+}
+.img {
+  width: 100%;
+}
+image {
+  width: 100%;
+}

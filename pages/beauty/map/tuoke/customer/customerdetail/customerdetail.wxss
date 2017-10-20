@@ -1,0 +1,21 @@
+/* customerdetail.wxss */
+.container {
+  width: 96%;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  font-family: "微软雅黑"
+}
+.title {
+  font-weight: bolder;
+  font-size: 30rpx;
+  text-align: center;
+  padding: 40rpx 0;
+}
+.black {
+  padding: 20rpx 0;
+  font-size: 30rpx;
+  font-weight: bolder;
+}
+.gray {
+  color: gray;
+}
